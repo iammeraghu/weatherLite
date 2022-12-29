@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:id="@+id/llayout"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+
+        >
+
+
+        <EditText
+            android:id="@+id/cityname"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="70"
+            android:background="@drawable/etbg"
+            android:ems="10"
+            android:hint="Enter the city Name"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="25"
+            android:background="#808080"
+
+            android:src="@drawable/search"
+
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="5"
+            android:background="#808080"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/my_location"
+            android:id="@+id/locationbutton"
+            >
+
+        </ImageButton>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tempdisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="233dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        tools:text="Temperature : " />
+
+    <TextView
+        android:id="@+id/region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:layout_marginTop="23dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        tools:text="Region : "
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/country"
+        android:layout_marginTop="43dp"
+       android:layout_centerHorizontal="true"
+        tools:src="@drawable/dummytemp"
+        android:id="@+id/imageview"
+
+
+
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="56dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        tools:text="Country" />
+
+
+    <TextView
+        android:id="@+id/windspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="274dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        tools:text="Wind in Kph :" />
+
+    <TextView
+        android:id="@+id/preassure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="312dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        tools:text="Pressure in Mb :" />
+
+    <TextView
+        android:id="@+id/humadity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="355dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        tools:text="humadity : " />
+
+    <TextView
+        android:id="@+id/report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="397dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        tools:text="Report : " />
+
+    <TextView
+        android:id="@+id/lastupdate"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:layout_marginTop="471dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        tools:text="lup : " />
+
+    <TextView
+        android:id="@+id/debug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:layout_marginTop="545dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+       tools:text="debug" />
+
+
+</RelativeLayout>
+
